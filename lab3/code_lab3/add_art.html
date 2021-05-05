@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="show.css" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar">
+        <div class="logo">
+            <img src="../resources/logo.png" class="logopic">
+        </div>
+
+        <ul class="nav">
+            <li class="hoverable"><a href="homepage.html" class="homelink">首页</a></li>
+            <li class="hoverable" ><a href="creataccount.html" class="creatlink">注册</a></li>
+            <li class="hoverable" ><a href="login.html" class="loginlink">登录</a></li>
+            <li class="hoverable"><a href="search.html" class="searchlnk">搜索</a></li>
+            <li class="hoverable"><a href="cart.html" class="cartlink">收藏</a></li>
+            
+        </ul>
+     
+    </div>
+
+    <form method="post" action="add_art.php" enctype="multipart/form-data">
+        <input type="hidden" name="MAX_FILE_SIZE" value="100000000">
+        <label for="userfile">Upload this file:</label>
+        <input name="userfile" type="file" id="userfile">
+        <p>
+            <label for="title">TITLE <em>*</em></label>
+            <input type="text" name="title" id="title" autofocus required><br>
+        </p>
+        <p>
+            <label for="artist">ARTIST <em>*</em></label>
+            <input type="text" name="artist" id="artist" required><br>
+        </p>
+        <p>
+            <label for="description">DESCRIPTION <em>*</em></label>
+            <textarea name="description" id="description" required></textarea>
+        </p>
+        <p>
+            <label for="yearofwork">YEAROFWORK <em>*</em></label>
+            <input type="number" name="yearofwork" id="yearofwork" required><br>
+        </p>
+        <p>
+            <label for="genre">GENRE <em>*</em></label>
+            <input type="text" name="genre" id="genre" required><br>
+        </p>
+        <p>
+            <label for="width">WIDTH <em>*</em></label>
+            <input type="number" name="width" id="width" required><br>
+        </p>
+        <p>
+            <label for="height">HEIGHT <em>*</em></label>
+            <input type="number" name="height" id="height" required><br>
+        </p>
+        <p>
+            <label for="price">PRICE <em>*</em></label>
+            <input type="number" name="price" id="price" required><br>
+        </p>
+        <P>
+            <input type="submit" class="button" value="ADD THE ART">
+        </P>
+    </form>
+
+    <footer id="footer">
+        <div class="copyright">
+        @ArtStore.Produced and maintained by Achillessanger at 2018.4.1.All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
